@@ -39,17 +39,17 @@ select:focus {
 }
 
 .sidebar .logo img {
-  width: 8em;
+  width: 7em;
 }
 
 .sidebar ul {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   list-style-type: none;
 }
 
 .sidebar ul li {
-  padding: 20px 0;
+  padding: 20px;
   border-top: 1px solid rgba(0, 0, 0, 0.4);
 }
 
@@ -61,7 +61,7 @@ select:focus {
   color: black;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition-delay: 0.4s;
   display: block;
   transform: translateX(-40px);
@@ -107,6 +107,12 @@ header {
   width: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  header {
+    height: 10vh;
+  }
+}
+
 header .header_overlay {
   display: none;
   position: relative;
@@ -122,7 +128,7 @@ header .header_overlay i {
 }
 
 header .header_overlay img {
-  width: 8em;
+  width: 7em;
   object-fit: cover;
 }
 
@@ -489,9 +495,10 @@ header ul img {
   list-style: circle inside none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .footer_area .footer_flex ul {
     flex-direction: column;
+    list-style: none;
   }
 }
 
@@ -584,5 +591,107 @@ header ul img {
 .footer_banner .footer_flex .banner_icons i:hover {
   color: #00746B;
   transform: translateY(-5px) scale(1.1);
+}
+
+.hero_banner.about_page {
+  background-image: url("../images/web4.jpg");
+  height: 80vh;
+  align-items: flex-start;
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .hero_banner.about_page {
+    align-items: center;
+  }
+}
+
+.hero_banner.about_page .inner_box {
+  max-width: 500px;
+}
+
+.News_post h2, .News_post h5, .News_post h4 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.News_post button {
+  background: #00746B;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+.News_post button:hover {
+  background: #01b9aa;
+}
+
+.hero_banner.contact_page {
+  background-image: url("../images/web5.jpg");
+  height: 80vh;
+  padding: 0 30px;
+}
+
+.hero_banner.contact_page form {
+  width: 600px;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero_banner.contact_page form {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero_banner.contact_page form {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+.hero_banner.contact_page form input, .hero_banner.contact_page form textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.425);
+  padding: 10px;
+  outline: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero_banner.contact_page form input, .hero_banner.contact_page form textarea {
+    padding: 5px;
+  }
+}
+
+.hero_banner.contact_page form input::placeholder, .hero_banner.contact_page form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.74);
+}
+
+@media screen and (max-width: 1000px) {
+  .hero_banner.contact_page form textarea {
+    height: 10vh;
+  }
+}
+
+.hero_banner.contact_page form input {
+  margin-top: 15px;
+}
+
+.hero_banner.contact_page form input:nth-child(1) {
+  margin-top: 0;
+}
+
+.hero_banner.contact_page form button {
+  background: #00746B;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.hero_banner.contact_page form button:hover {
+  background: #01b9aa;
 }
 /*# sourceMappingURL=style.css.map */

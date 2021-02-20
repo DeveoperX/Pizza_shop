@@ -33,15 +33,15 @@ select{
         text-align: center;
         padding: 15px 0;
         img{
-            width: 8em;
+            width: 7em;
         }
     }
     ul{
         margin: 0;
-        padding: 0 20px;
+        padding: 0;
         list-style-type: none;
         li{
-            padding: 20px 0;
+            padding: 20px;
             border-top: 1px solid rgba(0, 0, 0, 0.4);
             &:last-child{
                 border-bottom: 1px solid rgba(0, 0, 0, 0.4);
@@ -50,7 +50,7 @@ select{
                 color: black;
                 text-decoration: none;
                 text-transform: uppercase;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 transition-delay: 0.4s;
                 display: block;
                 transform: translateX(-40px);
@@ -89,6 +89,9 @@ header{
     z-index: 10;
     position: absolute;
     width: 100%;
+    @include mq(600px){
+        height: 10vh;
+    }
     .header_overlay{
         display: none;
         position: relative;
@@ -101,7 +104,7 @@ header{
             transform: translateY(-50%);
         }
         img{
-            width: 8em;
+            width: 7em;
             object-fit: cover;
         }
         @include mq(1000px){
@@ -368,8 +371,9 @@ header{
             align-items: center;
             justify-content: center;
             list-style: circle inside none;
-            @include mq(900px){
+            @include mq(1000px){
                 flex-direction: column;
+                list-style: none;
             }
         }
         li{
@@ -438,6 +442,79 @@ header{
                     transform: translateY(-5px) scale(1.1);
                 }
             }
+        }
+    }
+}
+
+
+
+// About Page Styling
+
+.hero_banner.about_page{
+    background-image: url("../images/web4.jpg");
+    height: 80vh;
+    align-items: flex-start;
+    padding: 0 30px;
+    @include mq(900px){
+        align-items: center;
+    }
+    .inner_box{
+        max-width: 500px;
+    }
+}
+
+.News_post{
+    h2, h5, h4{
+        font-weight: normal;
+        margin: 0;
+    }
+    button{
+        @include btn();
+    }
+}
+
+// Contact Page 
+
+.hero_banner.contact_page{
+    background-image: url("../images/web5.jpg");
+    height: 80vh;
+    padding: 0 30px;
+    form{
+        width: 600px;
+        @include mq(1000px){
+            width: 500px;
+        }
+        @include mq(800px){
+            width: 100%;
+            max-width: 350px;
+        }
+        input, textarea{
+            width: 100%;
+            background: transparent;
+            border: 1px solid rgba(0, 0, 0, 0.425);
+            padding: 10px;
+            outline: none;
+            @include mq(1000px){
+                padding: 5px;
+            }
+            &::placeholder{
+                color: rgba(0, 0, 0, 0.74);
+            }
+        }
+        textarea{
+            @include mq(1000px){
+                height: 10vh;
+            }
+        }
+        input{
+            margin-top: 15px;
+            &:nth-child(1){
+                margin-top: 0;
+            }
+        }
+        button{
+            @include btn();
+            margin-top: 10px;
         }
     }
 }
