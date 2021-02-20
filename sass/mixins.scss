@@ -1,0 +1,16 @@
+@mixin btn {
+    background: $main_color;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    &:hover{
+        background: $main_light_color;
+    }
+}
+
+@mixin mq($agu) {
+    @media screen and(max-width: $agu) {
+        @content;
+    }
+}
