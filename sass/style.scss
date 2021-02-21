@@ -518,3 +518,84 @@ header{
         }
     }
 }
+
+// Timing Page Styling
+
+.hero_banner.timing_page{
+    background-image: url("../images/web6.jpg");
+    height: 80vh;
+    padding: 0 30px;
+    .inner_box{
+        min-width: 600px;
+        @include mq(800px){
+            min-width: 400px;
+        }
+        @include mq(500px){
+            min-width: 100%;
+        }
+        .divider{
+            height: 3vh;
+            width: 100%;
+            background-color: white;
+        }
+        h3{
+            font-size: clamp(1.6rem, 10vw, 2.7rem);
+            color: black;
+            font-weight: bolder;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            margin: 10px 0;
+            margin-top: 16px;
+            @include mq(800px){
+                font-size: clamp(1.2rem, 10vw, 2.4rem);
+            }
+            @include mq(500px){
+                font-size: 20px;
+            }
+        }
+        .timing_table{
+            border-top: 5px solid white;
+            border-bottom: 5px solid white;
+            padding: 20px;
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            h6{
+                font-size: 20px;
+                font-weight: normal;
+                @include mq(500px){
+                    font-size: 15px;
+                }
+            }
+        }
+        .contact_info{
+            padding: 5px 0;
+            h2{
+                letter-spacing: 0.4rem;
+                @include mq(500px){
+                    font-size: 17px;
+                }
+            }
+            h4{
+                @include mq(500px){
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+.hero_banner.menus_page{
+    background-image: url("../images/web7.jpg");
+    height: 80vh;
+    padding: 0 30px;
+    .inner_box{
+        min-width: 600px;
+        @include mq(800px){
+            min-width: 400px;
+        }
+        @include mq(500px){
+            min-width: 100%;
+        }
+    }
+}

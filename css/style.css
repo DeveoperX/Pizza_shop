@@ -694,4 +694,116 @@ header ul img {
 .hero_banner.contact_page form button:hover {
   background: #01b9aa;
 }
+
+.hero_banner.timing_page {
+  background-image: url("../images/web6.jpg");
+  height: 80vh;
+  padding: 0 30px;
+}
+
+.hero_banner.timing_page .inner_box {
+  min-width: 600px;
+}
+
+@media screen and (max-width: 800px) {
+  .hero_banner.timing_page .inner_box {
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero_banner.timing_page .inner_box {
+    min-width: 100%;
+  }
+}
+
+.hero_banner.timing_page .inner_box .divider {
+  height: 3vh;
+  width: 100%;
+  background-color: white;
+}
+
+.hero_banner.timing_page .inner_box h3 {
+  font-size: clamp(1.6rem, 10vw, 2.7rem);
+  color: black;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 10px 0;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 800px) {
+  .hero_banner.timing_page .inner_box h3 {
+    font-size: clamp(1.2rem, 10vw, 2.4rem);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero_banner.timing_page .inner_box h3 {
+    font-size: 20px;
+  }
+}
+
+.hero_banner.timing_page .inner_box .timing_table {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero_banner.timing_page .inner_box .timing_table h6 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 500px) {
+  .hero_banner.timing_page .inner_box .timing_table h6 {
+    font-size: 15px;
+  }
+}
+
+.hero_banner.timing_page .inner_box .contact_info {
+  padding: 5px 0;
+}
+
+.hero_banner.timing_page .inner_box .contact_info h2 {
+  letter-spacing: 0.4rem;
+}
+
+@media screen and (max-width: 500px) {
+  .hero_banner.timing_page .inner_box .contact_info h2 {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero_banner.timing_page .inner_box .contact_info h4 {
+    font-size: 15px;
+  }
+}
+
+.hero_banner.menus_page {
+  background-image: url("../images/web7.jpg");
+  height: 80vh;
+  padding: 0 30px;
+}
+
+.hero_banner.menus_page .inner_box {
+  min-width: 600px;
+}
+
+@media screen and (max-width: 800px) {
+  .hero_banner.menus_page .inner_box {
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero_banner.menus_page .inner_box {
+    min-width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
